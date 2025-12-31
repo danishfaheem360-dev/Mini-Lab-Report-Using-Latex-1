@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{graphicx}       % For images
+\usepackage{amsmath}        % For equations
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float}          % Better table/figure placement
+\usepackage{cite}           % For bibliography citations
+
+\title{Mini Lab Report Using \LaTeX}
+\author{Danish Faheem}
+\date{\today}
+
+\begin{document}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{download.png}
+    \caption{University of Engineering and Technology}
+    \label{fig:placeholder}
+\end{figure}
+% -------- TITLE PAGE ----------
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% -------- INTRODUCTION ----------
+\section{Introduction}
+This mini lab report demonstrates the use of fundamental \LaTeX{} commands, including document structure, lists, tables, figures, equations, and bibliography management using a separate \texttt{.bib} file\cite{10222799}.
+
+% -------- OBJECTIVES ----------
+\section{Objectives}
+\begin{itemize}
+    \item Create a complete mini lab report in Overleaf.
+    \item Insert sections and subsections.
+    \item Add tables and figures.
+    \item Write mathematical equations.
+    \item Cite references using a separate bibliography file.
+\end{itemize}
+
+% -------- RESULTS ----------
+\section{Results}
+
+\subsection{Students' Marks Table}
+
+Table~\ref{tab:marks} shows the marks obtained by students in the lab activity.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Name} & \textbf{Marks} \\ \hline
+Ali & 85 \\ \hline
+Sara & 90 \\ \hline
+Danish & 88 \\ \hline
+\end{tabular}
+\caption{Student names and marks}
+\label{tab:marks}
+\end{table}
+
+% -------- FIGURE ----------
+\subsection{Inserted Figure}
+
+Figure~\ref{fig:logo} shows the UET logo inserted using the \texttt{graphicx} package.
+
+
+% -------- EQUATIONS ----------
+\section{Mathematical Equations}
+
+\subsection{Examples}
+
+Below are some required mathematical expressions:
+
+\paragraph{Quadratic Formula}
+\begin{equation}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{equation}
+
+\paragraph{Integral Example}
+\begin{equation}
+\int_0^1 x^2 \, dx = \frac{1}{3}
+\end{equation}
+
+\paragraph{Matrix Example}
+\begin{equation}
+A = 
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
+\end{equation}
+
+% -------- REFERENCES ----------
+\section{References}
+This report cites references from a separate bibliography file~\cite{latexbook,articleexample}.
+
+\bibliographystyle{IEEEtran}
+\bibliography{refe}
+\cite{}
+\end{document}
